@@ -1,0 +1,33 @@
+@use './colors' as *;
+
+.navbar_logo_font{
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    font-weight: 600;
+    color: $secondary-highlight;
+}
+h1{
+    font-size: 7vw;
+    letter-spacing: 0.2vw;
+    font-weight: 800;
+}
+h2{
+    font-size: 4.5vw;
+    letter-spacing: 0.1vw;
+    font-weight: 500;
+}
+h3{
+    font-size: 3.25vw;
+    letter-spacing: 0.1vw;
+    font-weight: 400;
+}
+p{
+    font-size: 1.75vw;
+    letter-spacing: 0.05vw;
+    font-weight: 300;
+}
+
+.hero-breadcrumbs{
+    font-size: 0.65rem;
+    font-weight: 300;
+}

@@ -1,0 +1,40 @@
+@use './colors' as *;
+
+.content{
+    width: 100vw;
+    padding: 0.25vw 1vw;
+    // margin: 2rem 8rem;
+}
+
+.content-section{
+    padding: 0.25vw 6vw;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+    // aspect-ratio: 16/9;
+    border-radius: 0.5rem;
+    // background-color: $primary-highlight;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.btn{
+    padding: 1.25rem 1rem;
+    background-color: $main;
+    color: $secondary-highlight;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    &:Hover{
+        background-color: $text-color;
+        color: $secondary-highlight;
+        transform: scale(1.05);
+    }
+}

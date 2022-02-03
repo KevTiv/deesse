@@ -1,0 +1,47 @@
+//##### NAVBAR STYLES #####// 
+
+@use '../../Global/colors' as *;
+
+.navbar{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    min-height: 12vw;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1.5;
+
+        span{
+            background-color: $primary-highlight;
+            display: flex;
+            flex: 0.9;
+            justify-content: center;
+            align-items:  center;
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 100%;
+            margin: 0 2.25rem;
+
+        }
+        h3{
+            font-size: 2vw;
+            text-transform: uppercase;
+            display: flex;
+            flex: 2;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 3;
+
+        li{
+            list-style: none;
+            text-transform: uppercase;
+        }
+    }
+}

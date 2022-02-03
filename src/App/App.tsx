@@ -1,13 +1,15 @@
-import React from 'react';
-import '../Styles/App/App.css';
-import Navbar from '../Components/Navbar';
+import Footer from '../components/footer'
+import Hero from '../components/hero'
+import Navbar from '../components/navbar'
+import '../Styles/Global/App.scss'
+import '../Styles/Global/font.scss'
 
 function App() {
   return (
     <div className="App">
-      <section>
-        <Navbar/>
-      </section>
+      <Navbar/>
+      <Hero/>
+      <Footer/>
     </div>
   );
 }

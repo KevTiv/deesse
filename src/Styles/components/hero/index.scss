@@ -1,0 +1,142 @@
+@use '../../Global/colors' as *;
+
+.hero-cta-content{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    margin: 10vw 0;
+    .part-1{
+        div:nth-child(1){
+            width: 100%;
+            display: flex;
+            position: relative;
+            span{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                clip-path: circle(40% at 50% 50%);
+                opacity: 0.8;
+                transition: opacity 0.5s ease-in-out;
+                
+                img{
+                    transform: translateX(10%);
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            h1{
+                z-index: 5;
+            }
+        }
+        div:nth-child(2){
+            width: 100%;
+            display: flex;
+            position: relative;
+            
+            span{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30%;
+                clip-path: circle(40% at 50% 50%);
+                transform: translateX(-15%);
+                opacity: 0.8;
+                transition: opacity 0.5s ease-in-out;
+                img{
+                    transform: translateX(10%);
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            h1{
+                transform: translateX(150%) translateY(-80%);
+            }
+        }
+    }
+}
+
+.part-2{
+    
+    width: 100% ;
+    margin: 3vw 0;
+
+    div:nth-child(1){
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        button {
+            position: absolute;
+            top: 10%;
+            right: 20%;
+            span {
+                font-size: 1.65vw;
+            }
+        }
+    }
+    
+}
+
+.hero-history-content{
+    h2{
+        text-transform: uppercase;
+    }
+    div:nth-child(1){
+        position: relative;
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            clip-path: polygon(0 40%, 100% 40%, 100% 70%, 0 70%);
+            transform: translateY(-72.5%) translateX(-5.5%);
+            opacity: 0.8;
+            transition: opacity 0.5s ease-in-out;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+        p{
+            width: 92%;
+        }
+    }
+}
+
+.fun-fact{
+    display: flex;
+    position: relative;
+    span{
+        position: absolute;
+        top: 20%;
+        right: 0;
+        transform: translateX(50%);
+        img{
+            width: 40%;
+        }
+    }
+    div{
+        // position: absolute;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.showCar{
+    display: inline-block;
+}
+.showAndre, 
+.showFlaminio{
+    display: none;
+}
