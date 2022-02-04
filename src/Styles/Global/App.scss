@@ -2,31 +2,29 @@
 
 .content{
     width: 100vw;
-    padding: 0.25vw 1vw;
-    // margin: 2rem 8rem;
+    // margin: 5% 5%;
 }
 
 .content-section{
-    padding: 0.25vw 6vw;
+    // padding: 0.25vw 6vw;
+    margin: 10% 5%;
 }
 
 .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 3rem;
-    // aspect-ratio: 16/9;
-    border-radius: 0.5rem;
-    // background-color: $primary-highlight;
     overflow: hidden;
 
     img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
 
 .btn{
+    min-width: 4vw;
+    min-height: 1.75vh;
     padding: 1.25rem 1rem;
     background-color: $main;
     color: $secondary-highlight;

@@ -14,11 +14,13 @@ html,body {
   left: 0;
   display: block;
   box-sizing: border-box;
-  // max-width: 1920px;
-  // min-width: 480px;
+  max-width: 1920px;
+  min-width: 480px;
   // max-height: 1200px;
   background-color: $background-color;
-  // overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 code {

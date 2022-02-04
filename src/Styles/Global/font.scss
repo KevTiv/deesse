@@ -1,5 +1,7 @@
 @use './colors' as *;
 
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Comforter&family=Indie+Flower&family=Pacifico&display=swap');
+
 .navbar_logo_font{
     font-size: 2.5vw;
     letter-spacing: 0.05vw;
@@ -7,21 +9,28 @@
     color: $secondary-highlight;
 }
 h1{
-    font-size: 7vw;
+    font-family: 'Indie Flower',
+    cursive;
+    font-size: 9vw;
     letter-spacing: 0.2vw;
     font-weight: 800;
 }
 h2{
+    font-family: 'Pacifico',
+    cursive;
     font-size: 4.5vw;
     letter-spacing: 0.1vw;
     font-weight: 500;
 }
 h3{
+    font-family: 'Pacifico',
+    cursive;
     font-size: 3.25vw;
     letter-spacing: 0.1vw;
     font-weight: 400;
 }
-p{
+p,li,span{
+    font-family: 'Arimo', sans-serif;
     font-size: 1.75vw;
     letter-spacing: 0.05vw;
     font-weight: 300;

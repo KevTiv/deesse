@@ -31,39 +31,18 @@ const Hero = () => {
                                     <b>Art</b>
                                 </h1>
                             </div>   
+                            <div>
+                                <p>Ride in the <span>most iconic</span> french automobile of the 20th century.</p>
+                                <button className="btn btn-cta">
+                                    <span>
+                                        Book a session now
+                                    </span>
+                                </button>
+                            </div>
                         </div>
-                    <div className="part-2">
-                        <div>
-                            <p>Ride in the <span>most iconic</span> french automobile of the 20th century.</p>
-                            <button className="btn btn-cta">
-                                <span>
-                                    Book a session now
-                                </span>
-                            </button>
-                        </div>
-                        <span className="img-container">
-                            <img src="" alt="" />
-                        </span>
-                        
-                    </div>
                 </div>
-                <div className="content content-section hero-history-content">
+                <div className="content content-section fun-fact">
                     <div>
-                        <p>
-                            Design by Italian sculptor and industrial designer <b>Flaminio Bertoni</b> and the French aeronautical engineer <b>André Lefèbvre</b>.
-                            Contemporary journalists said the DS pushed the envelope in the ride vs. handling compromise possible in a motor vehicle.
-                        </p>
-                        <span className="img-container">
-                            <img className="showCar" src={img3} alt="Citroën DS front facing" />
-                            <img className="showAndre" src={img4} alt="André Lefèbvre" />
-                            <img className="showFlaminio" src={img5} alt="Flaminio Bertoni" />
-                        </span>
-                    </div>
-                    
-                    <div className="fun-fact">
-                        <span>
-                            <img className="img-container" src={img6} alt="Citroën DS side" />
-                        </span>
                         <div>
                             <h3>Did you know?</h3>
                             <p>
@@ -73,6 +52,24 @@ const Hero = () => {
                                 eclipsed by the Tesla Model 3 which received 180,000 first day deposits in March 2016.
                             </p>
                         </div>
+                        <span className="img-container">
+                            <img src={img6} alt="Citroën DS side" />
+                        </span>
+                    </div>
+                    <div>
+                        <span className="img-container">
+                            <img className="showCar" src={img3} alt="Citroën DS front facing" />
+                            <img className="showAndre" src={img4} alt="André Lefèbvre" />
+                            <img className="showFlaminio" src={img5} alt="Flaminio Bertoni" />
+                        </span>
+                        <div>
+                            <h3>An insolite combination</h3>
+                            <p>
+                                Design by Italian sculptor and industrial designer <b>Flaminio Bertoni</b> and the French aeronautical engineer <b>André Lefèbvre</b>.
+                                Contemporary automobile journalists said:<br/> <b>"The DS pushed the envelope in the ride vs. handling compromise possible in a motor vehicle."</b>
+                            </p>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
