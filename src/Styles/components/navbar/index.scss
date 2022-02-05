@@ -24,13 +24,15 @@
             aspect-ratio: 1;
             border-radius: 100%;
             margin: 0 2.25rem;
-
+            // clip-path: ;
+            clip-path: circle(0% at 50% 50%);
         }
         h3{
-            font-size: 2vw;
+            font-size: 1.45vw;
             text-transform: uppercase;
             display: flex;
             flex: 2;
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
         }
     }
     ul{
@@ -42,6 +44,7 @@
         li{
             list-style: none;
             text-transform: uppercase;
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
         }
     }
 }

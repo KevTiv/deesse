@@ -1,5 +1,27 @@
 @use './colors' as *;
 
+.bg-left,
+.bg-right{
+    height: 100vh;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    background-color: $background-color;
+
+    z-index: -1;
+}
+.bg-left{
+    filter: overlay($background-color) blur(1rem);
+
+    span{
+        opacity: 0.2;
+        height: 100vh !important;
+    }
+}
+.bg-right{
+    right: 0;
+}
+
 .content{
     width: 100vw;
     // margin: 5% 5%;

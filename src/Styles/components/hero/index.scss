@@ -10,7 +10,20 @@
     // align-items: center;
     flex-direction: column;
     margin: 10vw 0;
+
+    .hero-breadcrumbs{
+        background-color: $breadcrumbs-bg;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5vw;
+        border-radius: 1.25rem;;
+    }
+    
+    
     .part-1{
+        h1,p {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        }
         div:nth-child(1){
             width: 100%;
             display: flex;

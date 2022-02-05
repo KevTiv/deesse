@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Comforter&family=Indie+Flower&family=Pacifico&display=swap');
 
-.navbar_logo_font{
+.logo{
     font-size: 2.5vw;
     letter-spacing: 0.05vw;
     font-weight: 600;
@@ -29,14 +29,24 @@ h3{
     letter-spacing: 0.1vw;
     font-weight: 400;
 }
-p,li,span{
+p,li{
     font-family: 'Arimo', sans-serif;
     font-size: 1.75vw;
     letter-spacing: 0.05vw;
     font-weight: 300;
 }
 
+span{
+    font-family: 'Arimo',
+    sans-serif;
+    font-size: 1vw;
+    letter-spacing: 0.05vw;
+    font-weight: 300;
+}
+
 .hero-breadcrumbs{
-    font-size: 0.65rem;
+    font-family: 'Arimo',
+    sans-serif;
+    font-size: 1.2vw;
     font-weight: 300;
 }
