@@ -9,44 +9,46 @@ import img5 from '../../img/citroen-creator_flaminio.jpeg'
 
 import img6 from '../../img/citroen-6.png'
 import { useRef, useEffect } from 'react'
-import { heroAppear } from '../../animation/heroAnimation'
+import { heroAppear, heroSecondPartAppear } from '../../animation/heroAnimation'
 
 const Hero = () => {
     const heroPart1Ref = useRef<HTMLDivElement>(null);
+    const heroFunFactRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
         heroAppear(heroPart1Ref);
-    },[])
+        heroSecondPartAppear(heroFunFactRef);
+    },[]);
     return (
         <>
             <section>
                 <div className="content content-section hero-cta-content">
                     <div className="hero-breadcrumbs">Featured offering</div>
-                        <div className="part-1" ref={heroPart1Ref}>
-                            <div>
-                                <h1>Experience a work of</h1>
-                                <span className="img-container">
-                                    <img src={img1} alt="Citroën DS" />
-                                </span>
-                            </div>
-                            <div>
-                                <span className="img-container">
-                                    <img src={img2} alt="Citroen DS speed meter" />
-                                </span>
-                                <h1 className="h1_emphasize_animate">
-                                    <b>Art</b>
-                                </h1>
-                            </div>   
-                            <div>
-                                <p>Ride in the <b>most iconic</b> french automobile of the 20th century.</p>
-                                <button className="btn btn-cta">
-                                    <span>
-                                        Book a session now
-                                    </span>
-                                </button>
-                            </div>
+                    <div className="part-1" ref={heroPart1Ref}>
+                        <div>
+                            <h1>Experience a work of</h1>
+                            <span className="img-container">
+                                <img src={img1} alt="Citroën DS" />
+                            </span>
                         </div>
+                        <div>
+                            <span className="img-container">
+                                <img src={img2} alt="Citroen DS speed meter" />
+                            </span>
+                            <h1 className="h1_emphasize_animate">
+                                <b>Art</b>
+                            </h1>
+                        </div>   
+                        <div>
+                            <p>Ride in the <b>most iconic</b> french automobile of the 20th century.</p>
+                            <button className="btn btn-cta">
+                                <span>
+                                    Book a session now
+                                </span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div className="content content-section fun-fact">
+                <div className="content content-section fun-fact" ref={heroFunFactRef}>
                     <div>
                         <div>
                             <h3>Did you know?</h3>

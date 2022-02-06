@@ -78,10 +78,11 @@
             }
         }
         div:nth-child(3) {
+            // background-color: yellow;
             display: flex;
             justify-content: justify-start;
             align-items: center;
-            transform: translateY(-300%);
+            transform: translateY(-500%);
             button {
                 // position: absolute;
                 // top: 0;
@@ -101,6 +102,10 @@
             flex-direction: column;
             flex: 2;
             margin: 0 5vw;
+
+            h3,p{
+               clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            }
         }
         span {
             position: relative;

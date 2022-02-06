@@ -1,15 +1,22 @@
 import '../../Styles/components/footer/index.scss'
 
 import img1 from '../../img/citroen-7.png'
+import { useEffect, useRef } from 'react';
+import { footerAppear } from '../../animation/footerAnimation';
 
 const Footer = () => {
+    const footerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        footerAppear(footerRef);
+    },[]);
   return (
       <>
         <section>
-            <div className="content content-section footer">
+            <div className="content content-section footer" ref={footerRef}>
                 <div className="content email-cta">
                     <div>
-                        <span className="img-container" >
+                        <span className="img-container img-animate">
                             <img  src={img1} alt="Citroën DS interior" />
                         </span>
                         <div>
