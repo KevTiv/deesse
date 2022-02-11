@@ -14,12 +14,12 @@ html,body {
   left: 0;
   display: block;
   box-sizing: border-box;
-  max-width: 1920px;
-  min-width: 480px;
-  // max-height: 1200px;
-  // background-color: $background-color;
+  width: 100vw;
   overflow-x: hidden;
   overflow-y: scroll;
+  // max-height: 1200px;
+  // background-color: $background-color;
+  
   scrollbar-width: none;
 }
 

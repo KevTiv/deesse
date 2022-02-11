@@ -14,6 +14,7 @@ export const footerAppear = (footerRef: RefObject<HTMLDivElement>) => {
             start: '-=900',
             end: '-=600',
             scrub: 3,
+            // markers: true,
         }
     });
     tl

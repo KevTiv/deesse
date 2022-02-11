@@ -8,9 +8,10 @@
     top: 0;
     background-color: $background-color;
 
-    z-index: -1;
+    z-index: -3;
 }
 .bg-left{
+
     filter: overlay($background-color) blur(1rem);
 
     span{
