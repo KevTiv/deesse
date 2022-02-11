@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.52d30e13.chunk.css",
+    "main.js": "./static/js/main.9a034607.chunk.js",
+    "main.js.map": "./static/js/main.9a034607.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.5264396a.js",
+    "runtime-main.js.map": "./static/js/runtime-main.5264396a.js.map",
+    "static/js/2.013c8d81.chunk.js": "./static/js/2.013c8d81.chunk.js",
+    "static/js/2.013c8d81.chunk.js.map": "./static/js/2.013c8d81.chunk.js.map",
+    "static/js/3.58a3b19c.chunk.js": "./static/js/3.58a3b19c.chunk.js",
+    "static/js/3.58a3b19c.chunk.js.map": "./static/js/3.58a3b19c.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.52d30e13.chunk.css.map": "./static/css/main.52d30e13.chunk.css.map",
+    "static/js/2.013c8d81.chunk.js.LICENSE.txt": "./static/js/2.013c8d81.chunk.js.LICENSE.txt",
+    "static/media/bg-img.829e79f8.jpg": "./static/media/bg-img.829e79f8.jpg",
+    "static/media/citroen-1.95f3223d.png": "./static/media/citroen-1.95f3223d.png",
+    "static/media/citroen-2.e11f5f63.png": "./static/media/citroen-2.e11f5f63.png",
+    "static/media/citroen-6.69415e63.png": "./static/media/citroen-6.69415e63.png",
+    "static/media/citroen-7.4cef5d30.png": "./static/media/citroen-7.4cef5d30.png",
+    "static/media/citroen-8.09e8ba42.png": "./static/media/citroen-8.09e8ba42.png",
+    "static/media/citroen-creator_andre.4777e6b7.jpeg": "./static/media/citroen-creator_andre.4777e6b7.jpeg",
+    "static/media/citroen-creator_flaminio.8cf10612.jpeg": "./static/media/citroen-creator_flaminio.8cf10612.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5264396a.js",
+    "static/js/2.013c8d81.chunk.js",
+    "static/css/main.52d30e13.chunk.css",
+    "static/js/main.9a034607.chunk.js"
+  ]
+}
