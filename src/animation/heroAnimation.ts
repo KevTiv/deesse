@@ -36,9 +36,10 @@ export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>)=
         },
         scrollTrigger:{
             trigger: heroFunFactRef.current!,
-            start: '-=800',
-            end: 'top top',
+            start: '-=120%',
+            end: '-=80%',
             scrub: 3,
+            markers: true,
         }
     });
     tl
