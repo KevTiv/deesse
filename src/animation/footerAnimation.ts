@@ -11,8 +11,8 @@ export const footerAppear = (footerRef: RefObject<HTMLDivElement>) => {
         },
         scrollTrigger:{
             trigger: footerRef.current!,
-            start: '-=700',
-            end: '-=500',
+            start: '-=900',
+            end: '-=600',
             scrub: 3,
         }
     });
