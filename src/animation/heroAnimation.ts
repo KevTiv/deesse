@@ -9,6 +9,10 @@ export const heroAppear = (heroPart1Ref: RefObject<HTMLDivElement>)=>{
         ease: "power3.inOut"
     }});
     tl
+    .from(document.querySelector('.hero-breadcrumbs'),{
+        'clip-path': 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)',
+        duration: 1.5
+    })
     .from(heroPart1Ref.current!.querySelectorAll('.img-container'),{
         'clip-path': 'circle(0% at 50% 50%)',
         stagger: 0.45,
@@ -27,7 +31,7 @@ export const heroAppear = (heroPart1Ref: RefObject<HTMLDivElement>)=>{
     },'-=1.85');
 };
 
-export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>)=>{
+export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>, refTriggerStart: string, refTriggerEnd: string)=>{
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({
         defaults:{
@@ -36,20 +40,21 @@ export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>)=
         },
         scrollTrigger:{
             trigger: heroFunFactRef.current!,
-            start: '-=120%',
-            end: '-=80%',
+            start: `-=${refTriggerStart}`,
+            end: `-=${refTriggerEnd}`,
             scrub: 3,
             markers: true,
         }
     });
     tl
     .to(heroFunFactRef.current!.querySelectorAll('h3,p'),{
-        'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
+        clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
         stagger: 0.75,
     })
     .from(heroFunFactRef.current!.querySelectorAll('span'),{
-       'clip-path': 'circle(0% at 50% 50%)',
-       scale: 3,
+        clipPath: 'circle(0% at 50% 50%)',
+        opacity: 0,
+        scale: 3,
         stagger: 0.75,
     },'-=2')
     .from(heroFunFactRef.current!.querySelectorAll('span:nth-child(1)'),{

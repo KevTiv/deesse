@@ -1,4 +1,5 @@
 @use './colors' as *;
+@use '../mixins/mediaQueries.scss' as *;
 
 .bg-left,
 .bg-right{
@@ -18,9 +19,15 @@
         opacity: 0.2;
         height: 100vh !important;
     }
+    @include sm_screen{
+        width: 100vw;
+    }
 }
 .bg-right{
     right: 0;
+    @include sm_screen{
+        display: none;
+    }
 }
 
 .content{

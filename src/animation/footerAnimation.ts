@@ -2,7 +2,7 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { RefObject } from 'react'
 
-export const footerAppear = (footerRef: RefObject<HTMLDivElement>) => {
+export const footerAppear = (footerRef: RefObject<HTMLDivElement>, refTriggerStart: string, refTriggerEnd: string) => {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({
         defaults:{
@@ -11,8 +11,8 @@ export const footerAppear = (footerRef: RefObject<HTMLDivElement>) => {
         },
         scrollTrigger:{
             trigger: footerRef.current!,
-            start: '-=120%',
-            end: '-=100%',
+            start: `-=${refTriggerStart}`,
+            end: `-=${refTriggerEnd}`,
             scrub: 3,
             // markers: true,
         }

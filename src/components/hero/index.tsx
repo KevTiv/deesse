@@ -8,16 +8,30 @@ import img4 from '../../img/citroen-creator_andre.jpeg'
 import img5 from '../../img/citroen-creator_flaminio.jpeg'
 
 import img6 from '../../img/citroen-6.png'
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import { heroAppear, heroSecondPartAppear } from '../../animation/heroAnimation'
 
 const Hero = () => {
+    
+    const [triggers, setTriggers] = useState({
+        start: '',
+        end: ''
+    });
+
     const heroPart1Ref = useRef<HTMLDivElement>(null);
     const heroFunFactRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
         heroAppear(heroPart1Ref);
-        heroSecondPartAppear(heroFunFactRef);
+
+        if(window.innerWidth <= 640){
+            return setTriggers({ start: '200%', end: '180%'});
+        }else{
+            return setTriggers({ start: '100%', end: '40%'});
+        }
     },[]);
+    useEffect(() => {
+        heroSecondPartAppear(heroFunFactRef, triggers.start, triggers.end);
+    },[triggers])
     return (
         <>
             <section>
@@ -66,8 +80,8 @@ const Hero = () => {
                     <div>
                         <span className="img-container">
                             <img className="showCar" src={img3} alt="Citroën DS front facing" />
-                            <img className="showAndre" src={img4} alt="André Lefèbvre" />
-                            <img className="showFlaminio" src={img5} alt="Flaminio Bertoni" />
+                            {/* <img className="showAndre" src={img4} alt="André Lefèbvre" />
+                            <img className="showFlaminio" src={img5} alt="Flaminio Bertoni" /> */}
                         </span>
                         <div>
                             <h3>An insolite combination</h3>
