@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/deesse/static/css/main.e5da16b1.chunk.css",
-    "main.js": "/deesse/static/js/main.87c18b09.chunk.js",
-    "main.js.map": "/deesse/static/js/main.87c18b09.chunk.js.map",
+    "main.css": "/deesse/static/css/main.9eb41529.chunk.css",
+    "main.js": "/deesse/static/js/main.033131cc.chunk.js",
+    "main.js.map": "/deesse/static/js/main.033131cc.chunk.js.map",
     "runtime-main.js": "/deesse/static/js/runtime-main.13b57af9.js",
     "runtime-main.js.map": "/deesse/static/js/runtime-main.13b57af9.js.map",
     "static/js/2.9228fffc.chunk.js": "/deesse/static/js/2.9228fffc.chunk.js",
@@ -10,19 +10,19 @@
     "static/js/3.48f5ac51.chunk.js": "/deesse/static/js/3.48f5ac51.chunk.js",
     "static/js/3.48f5ac51.chunk.js.map": "/deesse/static/js/3.48f5ac51.chunk.js.map",
     "index.html": "/deesse/index.html",
-    "static/css/main.e5da16b1.chunk.css.map": "/deesse/static/css/main.e5da16b1.chunk.css.map",
+    "static/css/main.9eb41529.chunk.css.map": "/deesse/static/css/main.9eb41529.chunk.css.map",
     "static/js/2.9228fffc.chunk.js.LICENSE.txt": "/deesse/static/js/2.9228fffc.chunk.js.LICENSE.txt",
-    "static/media/bg-img.829e79f8.jpg": "/deesse/static/media/bg-img.829e79f8.jpg",
-    "static/media/citroen-1.95f3223d.png": "/deesse/static/media/citroen-1.95f3223d.png",
-    "static/media/citroen-2.e11f5f63.png": "/deesse/static/media/citroen-2.e11f5f63.png",
-    "static/media/citroen-6.69415e63.png": "/deesse/static/media/citroen-6.69415e63.png",
-    "static/media/citroen-7.4cef5d30.png": "/deesse/static/media/citroen-7.4cef5d30.png",
-    "static/media/citroen-8.09e8ba42.png": "/deesse/static/media/citroen-8.09e8ba42.png"
+    "static/media/bg-img.f6e9421a.webp": "/deesse/static/media/bg-img.f6e9421a.webp",
+    "static/media/citroen-1.b3b86c15.webp": "/deesse/static/media/citroen-1.b3b86c15.webp",
+    "static/media/citroen-2.91ea5835.webp": "/deesse/static/media/citroen-2.91ea5835.webp",
+    "static/media/citroen-6.19117c8b.webp": "/deesse/static/media/citroen-6.19117c8b.webp",
+    "static/media/citroen-7.d27ee518.webp": "/deesse/static/media/citroen-7.d27ee518.webp",
+    "static/media/citroen-8.a7fd8cfe.webp": "/deesse/static/media/citroen-8.a7fd8cfe.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.13b57af9.js",
     "static/js/2.9228fffc.chunk.js",
-    "static/css/main.e5da16b1.chunk.css",
-    "static/js/main.87c18b09.chunk.js"
+    "static/css/main.9eb41529.chunk.css",
+    "static/js/main.033131cc.chunk.js"
   ]
 }
