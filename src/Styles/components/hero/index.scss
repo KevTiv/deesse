@@ -55,11 +55,9 @@
                 img{
                     transform: translateX(10%);
                 }
-                &:hover{
-                    opacity: 1;
-                }
                 @include sm_screen{
-                    top: -80%;
+                    // top: -80%;
+                    opacity: 0.7;
                 }
             }
             h1{
@@ -90,8 +88,12 @@
             h1{
                 // font-family: 'Comforter',
                 // cursive;
-                transform: translateX(80%) translateY(-80%);
+                transform: translateX(10rem) translateY(-12rem);
                 font-size: 18vw;
+
+                @include sm_screen{
+                    transform: translate(5rem, -5rem);
+                }
             }
         }
         div:nth-child(3) {

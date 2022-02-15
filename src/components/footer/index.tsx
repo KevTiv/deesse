@@ -1,8 +1,8 @@
 import '../../Styles/components/footer/index.scss'
 
-import img1 from '../../img/citroen-7.png'
-import { useEffect, useRef, useState } from 'react';
-import { footerAppear } from '../../animation/footerAnimation';
+import img1 from '../../img/citroen-7.webp'
+import { useEffect, useRef, useState } from 'react'
+import { footerAppear } from '../../animation/footerAnimation'
 
 const Footer = () => {
     const footerRef = useRef<HTMLDivElement>(null);
@@ -14,7 +14,7 @@ const Footer = () => {
     useEffect(() => {
 
         if(window.innerWidth <= 640){
-            return setTriggers({ start: '320%', end: '290%'});
+            return setTriggers({ start: '380%', end: '360%'});
         }else{
             return setTriggers({ start: '120%', end: '100%'});
         }

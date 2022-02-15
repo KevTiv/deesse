@@ -22,11 +22,8 @@ export const footerAppear = (footerRef: RefObject<HTMLDivElement>, refTriggerSta
         'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
         stagger: 0.75
     })
-    .from(footerRef.current!.querySelector('.img-animate'),{
-       'clip-path': 'circle(0% at 50% 50%) !important',
-        y: 100,
-        opacity: 0,
-        scale: 0.5,
-    //    x: 80
-    },'-=3');
+    // .to(footerRef.current!.querySelector('span'),{
+    //    'clip-path': 'circle(35% at 50% 50%) !important',
+    // //    x: 80
+    // },'-=3');
 }

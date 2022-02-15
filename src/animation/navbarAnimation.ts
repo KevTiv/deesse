@@ -64,7 +64,7 @@ export const animateOpenBurgerMenu = (burgerRef:RefObject<HTMLDivElement>)=>{
             height: '0.15rem',
             rotate: '0deg',
             duration: 0.3
-        })
+        },'-=0.3')
 }
 export const animateCloseBurgerMenu = (burgerRef:RefObject<HTMLDivElement>)=>{
     const tl = gsap.timeline();
@@ -80,5 +80,5 @@ export const animateCloseBurgerMenu = (burgerRef:RefObject<HTMLDivElement>)=>{
             height: '0.14rem',
             rotate: '-50deg',
             duration: 0.3
-        })
+        },'-=0.3')
 }

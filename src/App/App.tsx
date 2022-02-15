@@ -3,7 +3,7 @@ import Hero from '../components/hero'
 import Navbar from '../components/navbar'
 import '../Styles/Global/App.scss'
 import '../Styles/Global/font.scss'
-import bg from '../img/bg-img.jpg'
+import bg from '../img/bg-img.webp'
 import { useEffect, useRef } from 'react'
 import { bgAppear } from '../animation/bgAnimation'
 

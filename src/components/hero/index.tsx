@@ -1,13 +1,10 @@
 import '../../Styles/components/hero/index.scss'
 
-import img1 from '../../img/citroen-1.png'
-import img2 from '../../img/citroen-2.png'
-import img3 from '../../img/citroen-8.png'
+import img1 from '../../img/citroen-1.webp'
+import img2 from '../../img/citroen-2.webp'
+import img3 from '../../img/citroen-8.webp'
+import img6 from '../../img/citroen-6.webp'
 
-import img4 from '../../img/citroen-creator_andre.jpeg'
-import img5 from '../../img/citroen-creator_flaminio.jpeg'
-
-import img6 from '../../img/citroen-6.png'
 import { useRef, useEffect, useState } from 'react'
 import { heroAppear, heroSecondPartAppear } from '../../animation/heroAnimation'
 

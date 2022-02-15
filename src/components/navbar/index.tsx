@@ -11,7 +11,6 @@ const SmScreenNavbar = ()=>{
         <>
             <nav className="mobNav">
                 <div>
-                    <span className="logo logo_animate">BC</span>
                     <h3>Book a Citroën</h3>
                 </div>
 
