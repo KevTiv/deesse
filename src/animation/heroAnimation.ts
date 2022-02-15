@@ -47,14 +47,10 @@ export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>, 
         }
     });
     tl
-    .to(document.querySelector('.btn-cta'),{
-        opacity: 0,
-        duration: 0.1
-    })
     .to(heroFunFactRef.current!.querySelectorAll('h3,p'),{
         'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
         stagger: 0.75,
-    },'-=1.5')
+    })
     .to(heroFunFactRef.current!.querySelectorAll('.animate-fun-img'),{
         'clip-path': 'circle(36% at 50% 50%)',
         scale: 1,

@@ -35,8 +35,11 @@ const Footer = () => {
                         </span>
                         <div>
                             <p>Sign up to our <b>newsletter</b> and receive exclusive deal on our offerings.</p>
-                            <div className="email-container">
-                                <input type="email" />
+                            <div className="email-container" >
+                                <label htmlFor="get email promo">
+                                    <input type="email" />
+                                </label>
+                                
                                 <button type="submit" className="btn emailSubmit">
                                     <span>
                                         Submit

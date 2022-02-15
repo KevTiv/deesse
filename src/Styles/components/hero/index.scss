@@ -81,8 +81,8 @@
                 img{
                     transform: translateX(12%);
                 }
-                &:hover{
-                    opacity: 1;
+                @include sm_screen{
+                    transform: scale(1.35) translateX(-3.5%);
                 }
             }
             h1{
@@ -92,7 +92,7 @@
                 font-size: 18vw;
 
                 @include sm_screen{
-                    transform: translate(5rem, -5rem);
+                    transform: translate(6rem, -5rem);
                 }
             }
         }
