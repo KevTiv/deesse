@@ -24,7 +24,7 @@ const Hero = () => {
         heroAppear(heroPart1Ref);
 
         if(window.innerWidth <= 640){
-            return setTriggers({ start: '200%', end: '180%'});
+            return setTriggers({ start: '240%', end: '155%'});
         }else{
             return setTriggers({ start: '100%', end: '40%'});
         }
@@ -73,12 +73,12 @@ const Hero = () => {
                                 eclipsed by the Tesla Model 3 which received 180,000 first day deposits in March 2016.
                             </p>
                         </div>
-                        <span className="img-container">
+                        <span className="img-container animate-fun-img">
                             <img src={img6} alt="Citroën DS side" />
                         </span>
                     </div>
                     <div>
-                        <span className="img-container">
+                        <span className="img-container animate-fun-img">
                             <img className="showCar" src={img3} alt="Citroën DS front facing" />
                             {/* <img className="showAndre" src={img4} alt="André Lefèbvre" />
                             <img className="showFlaminio" src={img5} alt="Flaminio Bertoni" /> */}

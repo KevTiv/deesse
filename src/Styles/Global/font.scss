@@ -1,4 +1,5 @@
 @use './colors' as *;
+@use '../mixins/mediaQueries.scss' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Comforter&family=Indie+Flower&family=Pacifico&display=swap');
 
@@ -14,6 +15,10 @@ h1{
     font-size: 9vw;
     letter-spacing: 0.2vw;
     font-weight: 800;
+
+    @include sm_screen{
+        font-size: 10vw;
+    }
 }
 h2{
     font-family: 'Pacifico',
@@ -21,6 +26,10 @@ h2{
     font-size: 4.5vw;
     letter-spacing: 0.1vw;
     font-weight: 500;
+
+    @include sm_screen{
+        font-size: 6vw;
+    }
 }
 h3{
     font-family: 'Pacifico',
@@ -28,12 +37,20 @@ h3{
     font-size: 3.25vw;
     letter-spacing: 0.1vw;
     font-weight: 400;
+
+    @include sm_screen {
+        font-size: 4vw;
+    }
 }
 p,li{
     font-family: 'Arimo', sans-serif;
     font-size: 1.75vw;
     letter-spacing: 0.05vw;
     font-weight: 300;
+
+    @include sm_screen {
+        font-size: 2.5vw;
+    }
 }
 
 span{
@@ -42,6 +59,10 @@ span{
     font-size: 1vw;
     letter-spacing: 0.05vw;
     font-weight: 300;
+
+    @include sm_screen {
+        font-size: 2vw;
+    }
 }
 
 .hero-breadcrumbs{
@@ -49,4 +70,8 @@ span{
     sans-serif;
     font-size: 1.2vw;
     font-weight: 300;
+
+    @include sm_screen {
+        font-size: 2vw;
+    }
 }

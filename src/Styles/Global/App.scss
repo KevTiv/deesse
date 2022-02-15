@@ -38,6 +38,10 @@
 .content-section{
     // padding: 0.25vw 6vw;
     margin: 10% 5%;
+
+    @include sm_screen{
+        margin: 0% 4%;
+    }
 }
 
 .img-container {
@@ -64,5 +68,14 @@
         background-color: $text-color;
         color: $secondary-highlight;
         transform: scale(1.05);
+    }
+
+    @include sm_screen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        min-height: 1.15vh;
+        padding: 0.75rem;
     }
 }

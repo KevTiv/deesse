@@ -58,6 +58,9 @@
                 &:hover{
                     opacity: 1;
                 }
+                @include sm_screen{
+                    top: -80%;
+                }
             }
             h1{
                 z-index: 5;
@@ -94,7 +97,7 @@
         div:nth-child(3) {
             // background-color: yellow;
             display: flex;
-            justify-content: justify-start;
+            justify-content: flex-start;
             align-items: center;
             transform: translateY(-500%);
             button {
@@ -102,6 +105,10 @@
                 // top: 0;
                 // right: 25%;
                 margin: 0 3vw;
+            }
+
+            .btn-cta{
+                opacity: 1;
             }
 
             @include sm_screen{
@@ -124,22 +131,40 @@
             flex-direction: column;
             flex: 2;
             margin: 0 5vw;
-
             h3,p{
                clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
             }
         }
         span {
             position: relative;
-            // display: flex;
+            display: flex;
             // flex: 1;
             opacity: 1;
-            clip-path: circle(35% at 50% 50%);
+            clip-path: circle(0% at 50% 50%); //circle(36% at 50% 50%)
+
             width: 50%;
-            transform: scale(1.1);
+            transform: scale(3);
             img {
                 position: absolute;
                 transform: translateX(15%);
+            }
+        }
+    }
+    @include sm_screen{
+        div span{
+            position: absolute;
+            height: 50%;
+            aspect-ratio: 1;
+            &:nth-child(1){
+                top: -40%;
+                left: 25%;
+            }
+            &:nth-child(2) {
+                top: 95%;
+                left: 25%;
+            }
+            img{
+                transform: translateX(10%) scale(0.9);
             }
         }
     }

@@ -43,27 +43,21 @@ export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>, 
             start: `-=${refTriggerStart}`,
             end: `-=${refTriggerEnd}`,
             scrub: 3,
-            markers: true,
+            // markers: true,
         }
     });
     tl
-    .to(heroFunFactRef.current!.querySelectorAll('h3,p'),{
-        clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
-        stagger: 0.75,
-    })
-    .from(heroFunFactRef.current!.querySelectorAll('span'),{
-        clipPath: 'circle(0% at 50% 50%)',
+    .to(document.querySelector('.btn-cta'),{
         opacity: 0,
-        scale: 3,
+        duration: 0.1
+    })
+    .to(heroFunFactRef.current!.querySelectorAll('h3,p'),{
+        'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
         stagger: 0.75,
-    },'-=2')
-    .from(heroFunFactRef.current!.querySelectorAll('span:nth-child(1)'),{
-       y: -100,
-       x: 80
-    },'-=4')
-    .from(heroFunFactRef.current!.querySelectorAll('span:nth-child(2)'),{
-       y: 100,
-       x: -80
-    },'-=4')
-
+    },'-=1.5')
+    .to(heroFunFactRef.current!.querySelectorAll('.animate-fun-img'),{
+        'clip-path': 'circle(36% at 50% 50%)',
+        scale: 1,
+        stagger: 0.75,
+    },'-=2');
 };

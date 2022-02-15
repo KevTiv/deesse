@@ -1,7 +1,7 @@
 //##### NAVBAR STYLES #####// 
 
 @use '../../Global/colors' as *;
-@use '../../Global/colors' as *;
+@use '../../mixins/mediaQueries.scss' as *;
 
 .navbar{
     display: flex;
@@ -116,15 +116,19 @@
         display: none;
         flex-direction: column;
         justify-content: space-around;
-        align-items: justify-start;
+        align-items: flex-start;
         background-color: $secondary-highlight;
         li {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             margin: 0 4.5vw;
             list-style: none;
             text-transform: uppercase;
+
+            @include sm_screen{
+                transform: scale(2.5) translateX(3rem);
+            }
         }
     }
 }
