@@ -42,8 +42,7 @@ export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>, 
             trigger: heroFunFactRef.current!,
             start: `-=${refTriggerStart}`,
             end: `-=${refTriggerEnd}`,
-            scrub: 3,
-            // markers: true,
+            scrub: 4,
         }
     });
     tl
@@ -55,5 +54,6 @@ export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>, 
         'clip-path': 'circle(36% at 50% 50%)',
         scale: 1,
         stagger: 0.75,
-    },'-=2');
+        ease: "power3.out"
+    },'-=1');
 };

@@ -22,6 +22,8 @@ const Hero = () => {
 
         if(window.innerWidth <= 640){
             return setTriggers({ start: '240%', end: '155%'});
+        }else if(window.innerWidth >= 1200){
+            return setTriggers({ start: '15%', end: '5%'});
         }else{
             return setTriggers({ start: '100%', end: '40%'});
         }

@@ -125,7 +125,7 @@
             margin: 0 4.5vw;
             list-style: none;
             text-transform: uppercase;
-
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
             @include sm_screen{
                 transform: scale(2.5) translateX(3rem);
             }

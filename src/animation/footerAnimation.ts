@@ -13,8 +13,7 @@ export const footerAppear = (footerRef: RefObject<HTMLDivElement>, refTriggerSta
             trigger: footerRef.current!,
             start: `-=${refTriggerStart}`,
             end: `-=${refTriggerEnd}`,
-            scrub: 3,
-            // markers: true,
+            scrub: 4,
         }
     });
     tl

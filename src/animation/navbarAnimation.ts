@@ -23,21 +23,35 @@ export const navAnimation = (navRef:RefObject<HTMLDivElement>)=>{
 
 }
 export const openMobileMenu = (mobNavRef:RefObject<HTMLDivElement>)=>{
-    gsap.to(mobNavRef.current!,{
+    const tl = gsap.timeline();
+    tl
+    .to(mobNavRef.current!,{
         height: '100vh',
         duration: 0.8,
         ease: 'power3.out'
-    });
-    gsap.to(mobNavRef.current!.querySelector('ul'),{
+    })
+    .to(mobNavRef.current!.querySelector('ul'),{
         display: 'flex',
         opacity: 1,
         duration: 0.1,
-    });
+    },'-=0.7')
+    .to(mobNavRef.current!.querySelectorAll('li'),{
+        'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
+        duration: 0.2,
+        stagger: 0.1,
+        ease: 'power3.out',
+    },'-=0.3');
     
 }
 export const closeMobileMenu = (mobNavRef:RefObject<HTMLDivElement>)=>{
     const tl = gsap.timeline();
     tl
+    .to(mobNavRef.current!.querySelectorAll('li'),{
+        'clip-path': 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)',
+        duration: 0.2,
+        stagger: 0.1,
+        ease: 'power3.out',
+    })
     .to(mobNavRef.current,{
         height: 0,
         duration: 0.4,
@@ -47,7 +61,7 @@ export const closeMobileMenu = (mobNavRef:RefObject<HTMLDivElement>)=>{
         display: 'none',
         opacity: 0,
         duration: 0.1,
-    },'-=0.2');
+    });
     
 }
 export const animateOpenBurgerMenu = (burgerRef:RefObject<HTMLDivElement>)=>{
