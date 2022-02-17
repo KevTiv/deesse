@@ -12,15 +12,14 @@ const Footer = () => {
     });
 
     useEffect(() => {
-
         if(window.innerWidth <= 640){
             return setTriggers({ start: '380%', end: '360%'});
         }else if(window.innerWidth >= 1200){
             return setTriggers({ start: '20%', end: '10%'});
         }else{
-            return setTriggers({ start: '105%', end: '85%'});
+            return setTriggers({ start: '125%', end: '105%'});
         }
-    },[]);
+    },[window.innerWidth]);
     useEffect(() => {
         footerAppear(footerRef, triggers.start, triggers.end);
     },[triggers]);

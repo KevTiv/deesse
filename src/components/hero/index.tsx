@@ -17,17 +17,18 @@ const Hero = () => {
 
     const heroPart1Ref = useRef<HTMLDivElement>(null);
     const heroFunFactRef = useRef<HTMLDivElement>(null);
-    useEffect(() => {
+    useEffect(()=>{
         heroAppear(heroPart1Ref);
-
+    },[]);
+    useEffect(() =>{
         if(window.innerWidth <= 640){
             return setTriggers({ start: '240%', end: '155%'});
         }else if(window.innerWidth >= 1200){
             return setTriggers({ start: '15%', end: '5%'});
         }else{
-            return setTriggers({ start: '105%', end: '85%'});
+            return setTriggers({ start: '125%', end: '105%'});
         }
-    },[]);
+    },[window.innerWidth]);
     useEffect(() => {
         heroSecondPartAppear(heroFunFactRef, triggers.start, triggers.end);
     },[triggers])
