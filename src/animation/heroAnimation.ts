@@ -43,6 +43,7 @@ export const heroSecondPartAppear = (heroFunFactRef: RefObject<HTMLDivElement>, 
             start: `-=${refTriggerStart}`,
             end: `-=${refTriggerEnd}`,
             scrub: 4,
+            // markers: true
         }
     });
     tl
