@@ -28,6 +28,7 @@ export const openMobileMenu = (mobNavRef:RefObject<HTMLDivElement>)=>{
     .to(mobNavRef.current!,{
         height: '100vh',
         duration: 0.8,
+        top: 0,
         ease: 'power3.out'
     })
     .to(mobNavRef.current!.querySelector('ul'),{
