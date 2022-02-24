@@ -12,10 +12,10 @@ const Footer = () => {
     });
 
     useEffect(() => {
-        if(window.innerWidth <= 640){
-            return setTriggers({ start: '380%', end: '360%'});
+        if(window.innerWidth <= 828){
+            return setTriggers({ start: '300%', end: '270%'});
         }else if(window.innerWidth >= 1200){
-            return setTriggers({ start: '100%', end: '90%'});
+            return setTriggers({ start: '110%', end: '100%'});
         }else{
             return setTriggers({ start: '125%', end: '105%'});
         }

@@ -14,6 +14,7 @@ export const footerAppear = (footerRef: RefObject<HTMLDivElement>, refTriggerSta
             start: `-=${refTriggerStart}`,
             end: `-=${refTriggerEnd}`,
             scrub: 4,
+            markers: true
         }
     });
     tl

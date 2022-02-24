@@ -21,7 +21,7 @@ const Hero = () => {
         heroAppear(heroPart1Ref);
     },[]);
     useEffect(() =>{
-        if(window.innerWidth <= 640){
+        if(window.innerWidth <= 828){
             return setTriggers({ start: '240%', end: '155%'});
         }else if(window.innerWidth >= 1200){
             return setTriggers({ start: '75%', end: '55%'});
