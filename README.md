@@ -1,5 +1,9 @@
 # DÉESSE
 
+![website screenshot](https://github.com/KevTiv/deesse/blob/main/img_src/im1.svg)
+![website screenshot](https://github.com/KevTiv/deesse/blob/main/img_src/im2.svg)
+![website screenshot](https://github.com/KevTiv/deesse/blob/main/img_src/im3.svg)
+
 # LIVE DEMO
 https://kevtiv.github.io/deesse/
 # DESCRIPTION
